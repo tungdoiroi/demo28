@@ -23,7 +23,7 @@ public class HomeControl extends HttpServlet {
         List<Product> list =dao.getAllProduct();
         request.setAttribute("listP",list);
         request.setAttribute("listCC", listC);
-        request.getRequestDispatcher("Home.jsp").forward(request,response);
+        request.getRequestDispatcher("home.jsp").forward(request,response);
     }
 
 }
